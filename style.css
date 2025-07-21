@@ -13,10 +13,48 @@ body {
 }
 
 .container-box {
-    background-color: rgb(128, 118, 118);
+    background-color: white;
     height: 600px;
-    width: 450px;
+    width: 400px;
     border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    
+
+
+}
+
+.title-h1 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+
+
+}
+
+.title-h1 h1 {
+    font-family: "Times New Roman";
+    font-size: 90px;
+    margin: 0;
+    padding: 0;
+
+
+
+}
+
+.title-h1 h3 {
+    margin: 0;
+    font-family: "Times New Roman";
+    font-weight: 1000;
+    font-size: 25px;
+
+
+}
+
+.diamond-box {
+    height:75%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,13 +62,67 @@ body {
 
 }
 
-.title-h1 h1 {
-    font-family: "Times New Roman";
-    font-size: 80px;
+.diamond-shape {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    transform: rotate(45deg);
+}
+
+.play {
+   
+    height:25% ;
+    display: flex;
+    
+
 
 
 
 }
+
+.play_score {
+    width: 50%;
+    height: 110px;
+
+
+
+}
+
+.play_score h1 {
+    font-size: 60px;
+    margin-left: 10px;
+    
+
+
+}
+
+
+
+.play_btn {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+
+
+}
+
+.play_btn button {
+   height: 60px;
+   width: 100px;
+   margin: 10px;
+   border: black 2px solid;
+   font-size: large;
+   border-radius: 10px;
+}
+
+
+
+
+
+
 
 
 
@@ -44,16 +136,45 @@ body {
     }
 
     .title-h1 h1 {
-    font-size: 60px;
+        font-size: 60px;
+    }
+    .title-h1 h3 {
+    margin: 0;
+    font-family: "Times New Roman";
+    font-weight: 1000;
+    font-size: 20px;
+    }
+
+   .diamond-box {
+    height: 70%;
+    
+   }
+
+   .diamond-shape {
+    background-color: rgb(202, 4, 4);
+    width: 120px;
+    height: 120px;
 
 
+   }
 
+   .play_btn button {
+   height: 50px;
+   width: 90px;
+}
+
+   
 }
 
 
 
 
-}
+
+
+
+
+
+
 
 
 
