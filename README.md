@@ -1,6 +1,6 @@
-classes (kebab case e.g. user-name)
+classes (kebab case ex user-name)
 
 
-id/var/function (camelback e.g keyFrame )
+id/var/function (camelback ex keyFrame )
 
 
