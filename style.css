@@ -104,33 +104,94 @@ body {
 
 .upper-easy-card-wrapper {
     height: 50%;
-    background-color: blue;
-    display: grid;
-    grid-auto-flow: column;
+    
+    display: flex;
+    
 }
 
 .lower-easy-card-wrapper {
     height: 50%;
-
     display: flex;
     justify-content: center;
+   
 
 
 }
 
 .lower-easy-box {
     width: 50%;
-    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .left-easy-box {
-    background-color: pink;
+    
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
+.left-card-container,.right-card-container, .lower-card-container {
+    margin: 0;
+    position: relative;
+    width:60%;
+    height: 80%;
+    perspective: 1000px;
+
+}
+
+.left-card-easy,.right-card-easy,.lower-card-easy {
+   
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease;
+    border-radius: 10px;
+
+}
+
+.left-card-back, .right-card-back,.lower-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(188, 4, 4);
+    backface-visibility: hidden;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+
+}
+
+.left-card-front, .right-card-front, .lower-card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 2px black solid;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
 .right-easy-box {
-    background-color: red;
+    
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
