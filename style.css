@@ -152,6 +152,9 @@ body {
     transform-style: preserve-3d;
     transition: transform 0.8s ease;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
