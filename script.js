@@ -11,6 +11,7 @@ function flip() {
     theCard.style.transform = "rotateY(-180deg)"
     setTimeout(()=>{
     frontFaceScreen.style.display = "none";
+    easyLevel.style.display = "flex";
      theCard.style.transform = "rotateY(0deg)"},1000)
     
 

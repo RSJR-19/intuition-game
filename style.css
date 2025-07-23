@@ -69,11 +69,84 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: green;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
 
 
 }
 
+.easy-header {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.easy-card-space {
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+   
+
+}
+
+.easy-card-wrapper {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.upper-easy-card-wrapper {
+    height: 50%;
+    background-color: blue;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.lower-easy-card-wrapper {
+    height: 50%;
+
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.lower-easy-box {
+    width: 50%;
+    background-color: yellow;
+
+}
+
+.left-easy-box {
+    background-color: pink;
+
+}
+
+.right-easy-box {
+    background-color: red;
+
+}
+
+
+.score-footer {
+    height: 15%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 30px;
+}
+
+.score-footer h1 {
+    margin-right: 10px;
+
+}
 
 .back-card {
     position: absolute;
@@ -200,11 +273,16 @@ body {
 
     }
 
-    .score-wrapper {
-        font-size: 30px;
+    .easy-card-wrapper {
+        height: 270px;
+        width: 260px;
 
 
     }
+
+
+
+ 
   
 
 
