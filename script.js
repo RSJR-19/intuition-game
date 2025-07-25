@@ -8,6 +8,10 @@ const leftCardFront = document.getElementById("leftCardFront");
 const rightCardFront = document.getElementById("rightCardFront");
 const lowerCardFront = document.getElementById("lowerCardFront")
 
+let cardSelected = "";
+let diamondIsPlacedOn = "";
+
+
 
 frontFaceScreen.style.display = "flex";
 easyLevel.style.display = "none";
@@ -31,25 +35,34 @@ function makeDiamond() {
      diamond.style.backgroundColor ="red";
     }
     
-    
+    let diamondPosition = "";
 
     let randomizer = (Math.floor(Math.random()*3) + 1);
     if (randomizer === 1) {
         leftCardFront.appendChild(diamond);
-        console.log("ha")
+        diamondPosition = "left";
+        
+        
     }
     else if (randomizer === 2) {
         rightCardFront.appendChild(diamond);
-        console.log("yo")
+         diamondPosition = "right";
+       
+
     
     }
     else if (randomizer === 3) {
         lowerCardFront.appendChild(diamond);
-        console.log("go")
+        diamondPosition = "lower";
+        
     
     }
 
+    diamondIsPlacedOn = diamondPosition;
 }
+
+
+
 
 
 
@@ -59,31 +72,56 @@ function normalFlip(idTarget) {
     if (idTarget === leftCardEasy) {
         rightCardEasy.style.transform = "rotateY(-180deg)";
         lowerCardEasy.style.transform = "rotateY(-180deg)";
+        cardChosen = "left";
+        
+        
     }
     else if (idTarget === rightCardEasy) {
         leftCardEasy.style.transform = "rotateY(-180deg)";
         lowerCardEasy.style.transform = "rotateY(-180deg)";
+        cardChosen= "right";
+        
     }
     else if (idTarget === lowerCardEasy) {
         leftCardEasy.style.transform = "rotateY(-180deg)";
         rightCardEasy.style.transform = "rotateY(-180deg)";
+        cardChosen = "lower";
+        
     }
+    compareIfSame(cardChosen)
+    
 },1000)
-
-flipBack()
-
-}
-
-function flipBack() {
-    setTimeout(()=> {
+setTimeout(()=> {
         leftCardEasy.style.transform = "rotateY(0deg)";
         rightCardEasy.style.transform = "rotateY(0deg)";
         lowerCardEasy.style.transform = "rotateY(0deg)";
     
+        
+    
     },2200)
+    
+    
+
+}
+
+function compareIfSame(cardChosen) {
+    
+    console.log(cardChosen)
+    console.log(diamondIsPlacedOn)
+    if (cardChosen === diamondIsPlacedOn){
+        console.log("correct")
+    }
+    else {
+        console.log("nah")
+    }
+
 
 
 }
+
+
+
+
 
 function flip() {
     
