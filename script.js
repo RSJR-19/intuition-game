@@ -16,12 +16,21 @@ makeDiamond()
 
 
 function makeDiamond() {
+    let goldRandomizer = (Math.floor(Math.random()*20)+1);
+    console.log(goldRandomizer)
+
     let diamond = document.createElement("div");
     diamond.style.width = "25px";
     diamond.style.height = "25px";
     diamond.style.border = "0.5px black solid";
     diamond.style.transform = "rotate(45deg)";
-    diamond.style.backgroundColor = "red";
+    if (goldRandomizer === 19){
+     diamond.style.backgroundColor = "gold"
+    }
+    else {
+     diamond.style.backgroundColor ="red";
+    }
+    
     
 
     let randomizer = (Math.floor(Math.random()*3) + 1);
@@ -60,14 +69,18 @@ function normalFlip(idTarget) {
         rightCardEasy.style.transform = "rotateY(-180deg)";
     }
 },1000)
-        
 
-
-
+flipBack()
 
 }
 
-function flipAll() {
+function flipBack() {
+    setTimeout(()=> {
+        leftCardEasy.style.transform = "rotateY(0deg)";
+        rightCardEasy.style.transform = "rotateY(0deg)";
+        lowerCardEasy.style.transform = "rotateY(0deg)";
+    
+    },2200)
 
 
 }
